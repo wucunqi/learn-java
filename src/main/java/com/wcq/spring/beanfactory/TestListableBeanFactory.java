@@ -1,6 +1,6 @@
-package com.wcq.spring;
+package com.wcq.spring.beanfactory;
 
-import com.wcq.spring.pojo.House;
+import com.wcq.spring.beanfactory.pojo.House;
 import org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.BeanPostProcessor;

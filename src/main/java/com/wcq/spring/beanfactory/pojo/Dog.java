@@ -1,19 +1,18 @@
-package com.wcq.spring.pojo;
+package com.wcq.spring.beanfactory.pojo;
 
 import org.springframework.stereotype.Component;
 
-@Component("cat")
-public class Cat implements Pet {
+@Component
+public class Dog implements Pet {
     private String name;
     private Integer age;
-
     @Override
     public void eat() {
-
+        System.out.println("Dog eat");
     }
 
     @Override
     public void run() {
-
+        System.out.println("Dog run");
     }
 }

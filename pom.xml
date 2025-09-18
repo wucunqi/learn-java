@@ -32,6 +32,11 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <!-- JUnit Jupiter API，包含 @Test 等注解 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>

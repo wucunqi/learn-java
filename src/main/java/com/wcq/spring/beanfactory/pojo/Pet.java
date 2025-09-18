@@ -1,4 +1,4 @@
-package com.wcq.spring.pojo;
+package com.wcq.spring.beanfactory.pojo;
 
 public interface Pet {
     void eat();
