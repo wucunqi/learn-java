@@ -64,7 +64,7 @@ public class RedBlackTree<K extends Comparable<K>, V> {
                     x.parent.isRed = !x.parent.isRed;
                     x.parent.parent.isRed = !x.parent.parent.isRed;
                     rotateRight(x.parent.parent);
-                } else if(x = x.parent.right && x.parent = x.parent.parent.right){
+                } else if(x == x.parent.right && x.parent == x.parent.parent.right){
 
                 } else if(x == x.parent.left && x.parent == x.parent.parent.right){
 

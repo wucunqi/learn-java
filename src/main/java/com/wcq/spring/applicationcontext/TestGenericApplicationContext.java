@@ -16,7 +16,15 @@ public class TestGenericApplicationContext {
         // Jakarta
         context.registerBean(CommonAnnotationBeanPostProcessor.class);
 
-        // 执行BeanFactoryPostProcessor、实例化BeanPostProcessor并放入队列、实例化非懒加载bean
+        /*
+        准备 BeanFactory：加载所有 BeanDefinition（你手工注册的那些）。
+        执行 BeanFactoryPostProcessor（如果有的话）。
+        这一步允许你在 Bean 实例化前，修改 BeanDefinition。
+        实例化所有 BeanPostProcessor，并放入容器的后处理器队列。
+        这里 AutowiredAnnotationBeanPostProcessor、CommonAnnotationBeanPostProcessor 会被真正实例化。
+        实例化非懒加载单例 Bean（比如 bean1）。
+        在创建 bean1 的过程中，刚刚注册的 BeanPostProcessor 会介入，处理依赖注入、生命周期注解等。
+         */
         context.refresh();
     }
 }
