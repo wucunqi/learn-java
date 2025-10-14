@@ -1,1 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/kyl_db?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: dev
+    password: 123456
 
+logging:
+  level:
+    root: info
+    com.wcq.webserver: error
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

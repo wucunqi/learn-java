@@ -10,9 +10,12 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class LifeCircleBean {
+    private String javaHome;
+
     /*
     观察方法执行顺序
     BeanPostProcessor为Bean的生命周期各个阶段提供扩展
+    创建 -> （*）依赖注入（*） -> （*）初始化（*）
      */
     public LifeCircleBean() {
         log.info("构造方法执行");

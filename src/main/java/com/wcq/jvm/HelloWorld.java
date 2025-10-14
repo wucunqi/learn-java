@@ -2,6 +2,9 @@ package com.wcq.jvm;
 
 import java.time.LocalDate;
 
+/**
+ * javap -v HelloWorld.class
+ */
 public class HelloWorld {
     private static Integer a = 100;
     private static Double b = 2D;
