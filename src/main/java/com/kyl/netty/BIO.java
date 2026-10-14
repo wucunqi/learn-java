@@ -12,6 +12,7 @@ import java.nio.file.Path;
 @Slf4j
 public class BIO {
     static void main() {
+        // FileChannel只能工作在阻塞模式下
         try (FileChannel fileChannel = FileChannel.open(Path.of("data.txt"))) {
             ByteBuffer byteBuffer = ByteBuffer.allocate(10);
             StringBuilder sb = new StringBuilder();
